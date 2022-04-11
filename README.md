@@ -1,1 +1,1 @@
-# no.tjweb.cavius
+# Cavius Integration for Homey
