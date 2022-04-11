@@ -1,1 +1,3 @@
-# Cavius Integration for Homey
+# Cavius
+
+Adds support for Cavius devices.
