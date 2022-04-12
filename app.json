@@ -1,22 +1,104 @@
 {
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "no.tjweb.cavius",
   "version": "1.0.0",
   "compatibility": ">=5.0.0",
-  "platforms": ["local"],
+  "platforms": [
+    "local"
+  ],
   "sdk": 3,
-  "brandColor": "#FF0000",
-  "name": { "en": "Cavius" },
-  "description": { "en": "Adds support for Cavius devices." },
+  "brandColor": "#bb141a",
+  "name": {
+    "en": "Cavius"
+  },
+  "description": {
+    "en": "Adds support for Cavius devices."
+  },
   "category": "security",
-  "tags": { "en": ["smoke detector"] },
+  "tags": {
+    "en": [
+      "smoke detector"
+    ]
+  },
   "images": {
     "small": "/assets/images/small.png",
-    "large": "/assets/images/large.png",
-    "xlarge": "/assets/images/xlarge.png"
+    "large": "/assets/images/large.png"
   },
-  "permissions": ["homey:manager:api"],
+  "permissions": [
+    "homey:manager:api",
+    "homey:wireless:433"
+  ],
   "author": {
-    "email": "thorleif@tjhweb.no",
+    "email": "thorleif@tjweb.no",
     "name": "Thorleif Jacobsen"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "2103"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_smoke"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "images": {
+        "small": "/drivers/2103/assets/images/small.png",
+        "large": "/drivers/2103/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "2103"
+    }
+  ],
+  "signals": {
+    "433": {
+      "cavius": {
+        "sof": [
+          312,
+          1090,
+          312,
+          1090,
+          312,
+          1090
+        ],
+        "eof": [],
+        "words": [
+          [
+            312,
+            1090,
+            312,
+            1090
+          ],
+          [
+            990,
+            400,
+            312,
+            1090
+          ]
+        ],
+        "interval": 11300,
+        "repetitions": 6,
+        "sensitivity": 0.5,
+        "minimalLength": 11,
+        "maximalLength": 11
+      }
+    }
   }
 }

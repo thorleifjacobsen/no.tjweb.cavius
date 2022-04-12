@@ -1,0 +1,13 @@
+{
+  "sof": [312, 1090, 312, 1090, 312, 1090],
+  "eof": [],
+  "words": [
+    [312, 1090, 312, 1090],
+    [990, 400, 312, 1090]
+  ],
+  "interval": 11300,
+  "repetitions": 6,
+  "sensitivity": 0.5,
+  "minimalLength": 11,
+  "maximalLength": 11
+}

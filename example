@@ -1,0 +1,10 @@
+4 on  received data: 0,1,1,1,1,1,1,0,1,1,1,1 isRepetition true
+
+
+
+4 off received data: 0,1,1,1,1,1,1,0,1,1,1,0 isRepetition true
+
+1 on  received data: 0,1,1,1,0,1,1,1,1,1,1,1 isRepetition true
+1 off received data: 0,1,1,1,0,1,1,1,1,1,1,0 isRepetition true
+
+1,1,1,0,0,0,0,0,0,1,1,0,0,0,0
